@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/* font-family: 'Outfit', sans-serif; */
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+main {
+  width: 300px;
+  height: auto;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1.2rem;
+  border-radius: 1rem;
+}
+main > h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-top: 1rem;
+  color: hsl(0, 0%, 100%);
+  transition: 0.3s;
+}
+main > h5:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+main > p {
+  font-size: 18px;
+  margin: 0;
+  margin-top: 1rem;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+main > img {
+  width: 300px;
+  border-radius: 1rem;
+}
+
+.nft__info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.nft__price {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.nft__validity {
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  align-items: center;
+}
+
+.nft__validity > img,
+.nft__price > img {
+  margin-right: 0.3rem;
+}
+.line {
+  margin-top: 1rem;
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+}
+.creator {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  color: hsl(215, 51%, 70%);
+}
+.creator > img {
+  width: 32px;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.creator > span.creator__name {
+  color: hsl(0, 0%, 100%);
+  transition: 0.4s;
+}
+.creator > span.creator__name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.hover__image {
+  width: 300px;
+  height: 300px;
+  border-radius: 1rem;
+  background-color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  margin-top: 121px;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.hover__image:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hover__image {
+    margin-top: 80px;
+  }
+}
